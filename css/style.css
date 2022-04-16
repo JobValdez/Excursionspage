@@ -5,7 +5,7 @@
 }
 
 li, a, button {
-    font-family: sans-serif;
+    font-family: Inter,sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #FFF;
@@ -36,6 +36,7 @@ header {
 
 .navs-links li a {
     transition: all 0.3s ease 0s;
+    font-size: 17px;
 }
 .navs-links li a:hover {
     color: rgb(218, 198, 198);
@@ -104,4 +105,61 @@ height: 20px;
 justify-content: flex-end;
 align-self: center;
 padding-top: 5px;
+}
+/* End of the Header*/
+
+/*  Slice Container*/
+
+.slice-container {
+    background-image: url(../img/Playa_Punta_Cana2.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+    height: 91vh;
+    max-height:600px ;
+    /* background-size: 100% 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Poppins,sans-serif;
+    flex-grow: 3;
+}
+
+.slice-container h1 {
+    font-size: 85px;
+    color: #FFF;
+    font-family: Poppins,sans-serif;
+    font-weight: 700;
+}
+
+.excursiones {
+    margin-top: 30px;
+}
+
+.enpuntacana {
+    margin-top: -20px;
+}
+.subtitulo h2{
+    font-size: 30px;
+    color: #FFF;
+}
+
+.subtilulo2 h4 {
+    font-size: 20px;
+    color: #ffd900;
+    margin-top: 50px;
+    letter-spacing: 4px;   
+}
+
+.slice {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.slice img {
+    height: 280px;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
 }
