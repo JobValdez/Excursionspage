@@ -17,6 +17,9 @@ header {
     justify-content:flex-end;
     align-items: center;
     padding: 10px 10%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logo {
@@ -44,39 +47,40 @@ header {
 
 .nav-container {
     background-color: #0d21d3;
+    height: 140px;
 }
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #0d21d3;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+    background-color: #0d21d3;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }   
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #696acf;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color:#3a4ad6;}
@@ -110,18 +114,19 @@ padding-top: 5px;
 
 /*  Slice Container*/
 
-.slice-container {
+.section1image {
     background-image: url(../img/Playa_Punta_Cana2.jpg);
-    background-repeat: no-repeat;
-    background-position: 0% 90%;
+    background-repeat: repeat;
+    background-position: 50% 100%;
+}
+
+.slice-container {
     height: 91vh;
-    max-height:600px ;
-    /* background-size: 100% 100%; */
+    max-height:2000px ;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Poppins,sans-serif;
-    flex-grow: 3;
 }
 
 .slice-container h1 {
@@ -160,6 +165,59 @@ padding-top: 5px;
 .slice img {
     height: 280px;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
+}
+
+/* Fin del slice y comienzo del contenido principal */
+
+.excursions-container {
+    background-color: #f1f1f1;
+    height: 100vh;
+    color: #ffd900;
+    padding-top: 60px;
+    padding-bottom: 0;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.section2image {
+    background-image: url(../img/backgroundsection1.jpg);
+    background-repeat: repeat;
+}
+.excursions-container{
+    max-width: 1600px;
+    align-content: center;
+    margin-left: auto;
+    margin-right:auto;
+    outline: black solid;
+}
+
+.excursions-container div a {
+    box-sizing: border-box;
+    border-radius: 100px;
+    text-align: center;
+    margin-right: 10px;
+    padding: 10px 20px 10px 20px;
+    font-size: 12px;
+}
+
+.tab1 {
+    background-color: #00135f;
+    color: rgba(255,255,255,.87);
+}
+.tab2{
+    background-color: #FFF;
+    color: #00135f;
+}
+.excursions-container h3 {
+    color:#00135f;
+    font-size: 100px;
+    padding-left: 60px;
 }
