@@ -4,12 +4,17 @@
     padding: 0;
 }
 
-li, a, button {
+li, button {
     font-family: Inter,sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #FFF;
     text-decoration: none;
+}
+
+.headerimage {
+    background-image: url(../img/headerimage.jpg);
+    background-repeat:repeat;
 }
 
 header {
@@ -20,7 +25,9 @@ header {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    max-height: 70px;
 }
+
 
 .logo {
     cursor: pointer;
@@ -40,6 +47,10 @@ header {
 .navs-links li a {
     transition: all 0.3s ease 0s;
     font-size: 17px;
+    font-family: Inter,sans-serif;
+    font-weight: 500;
+    color: #FFF;
+    text-decoration: none;
 }
 .navs-links li a:hover {
     color: rgb(218, 198, 198);
@@ -103,6 +114,8 @@ header {
 .catalogo-button a {
     padding-left: 30px;
     padding-right: 10px;
+    color: #FFF;
+    text-decoration: none;
 }
 .catalogo-button img {
 height: 20px;
@@ -173,7 +186,6 @@ padding-top: 5px;
 
 .excursions-container {
     background-color: #f1f1f1;
-    height: 100vh;
     color: #ffd900;
     padding-top: 60px;
     padding-bottom: 0;
@@ -199,7 +211,7 @@ padding-top: 5px;
     outline: black solid;
 }
 
-.excursions-container div a {
+.excursions-container div .tab1, .tab2 {
     box-sizing: border-box;
     border-radius: 100px;
     text-align: center;
@@ -211,13 +223,183 @@ padding-top: 5px;
 .tab1 {
     background-color: #00135f;
     color: rgba(255,255,255,.87);
+    text-decoration: none;
 }
 .tab2{
     background-color: #FFF;
     color: #00135f;
+    text-decoration: none;
 }
 .excursions-container h3 {
     color:#00135f;
     font-size: 100px;
     padding-left: 60px;
+}
+
+/* SIDEBAR AND EXCURSIONS CONTENT */
+
+.sidebarandexcursionscontent {
+    outline: red solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebarexcursions {
+    flex: 1 1 30%;
+}
+
+.excursionscontent {
+    flex: 1 1 70%;
+    border: #000 solid;
+}
+.sidebarexcursionscontent img {
+    width: 60px;
+    height: 140px;
+    max-height: 50px;
+    max-width: 70px;
+    margin: 50px 0px 0 50px;
+}
+
+.sidebarexcursionscontent h3 {
+    font-size: 38px;
+    color:#000;
+    margin-left: 50px;
+    padding: 0;
+}
+
+.sidebarandexcursionscontent p {
+    margin-top: 15px;
+    margin-left: 50px;
+    font-family: Inter,sans-serif;
+    font-size: 17px;
+    line-height: 1.4em;
+    font-weight: 400;
+    color: #333;
+}
+
+.experiencias {
+    width: fit-content;
+}
+.experiencias p{
+    box-sizing: border-box;
+    background-color: #FFF;
+    color: #333;
+    border-radius: 10px;
+    border: #333 solid 0.5px;
+    padding: 5px;
+}   
+
+.excursionsbox1 {
+    outline: black solid 0.5px;
+    max-width: 28vw;
+    flex-direction: column;
+    margin-top: 60px;
+    border-radius: 30px;
+}
+
+.plazasimage {
+    background-color: #0d21d3;
+    background-image: url(../img/excursionsimage1.jpeg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plazas a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 4px;
+    background-color: #1fcaca;
+    border-radius: 5px;
+    font-family: Inter,sans-serif;;
+}
+
+.plazas {
+    margin-bottom: 3px;
+    align-self: flex-start;
+    background-color: #333;
+    align-self: center;
+}
+
+.favoritos {
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.toursboxinformation {
+    display: flex;
+    flex-direction: row;
+    height: 160px;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.tourstitle {
+    font-family: Poppins,sans-serif;
+    margin-left: 15px;
+    color: #00135f;
+    width: auto;
+    margin-top: 5px;
+    font-size: 1.4vw;
+}
+
+.toursboxlefinfo {
+    margin-left: 10px;
+    color: rgba(0,0,0,.51);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.calendario, .reloj {
+    max-width: 15px;
+}
+
+.cancelacion {
+    margin-top: 10px;
+}
+.cancelacion a{
+    font-family: Inter,sans-serif;
+    color: #59a561;
+    font-size: 10px;
+    line-height: 1.3em;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 0;
+    text-decoration: underline;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.toursboxrightinfo {
+    color: rgba(0,0,0,.51);
+    margin-right: 15px;
+}
+
+.oldvalue {
+    color: #e00000;
+    font-weight: bolder;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-decoration: line-through;
+}
+
+.actualvalue {
+    font-family: Inter,sans-serif;
+    color: #0d21d3;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.note {
+    color: #8d94a3;
+    font-size: 10px;
 }
