@@ -186,7 +186,6 @@ padding-top: 5px;
 
 .excursions-container {
     background-color: #f1f1f1;
-    color: #ffd900;
     padding-top: 60px;
     padding-bottom: 0;
 }
@@ -244,14 +243,36 @@ padding-top: 5px;
     flex-wrap: wrap;
 }
 
+.sidebar-and-actividades-container {
+    outline: red solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .sidebarexcursions {
+    flex: 1 1 30%;
+}
+
+.sidebar-actividades {
     flex: 1 1 30%;
 }
 
 .excursionscontent {
     flex: 1 1 70%;
     border: #000 solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
+.actividades-container {
+    flex: 1 1 70%;
+    border: #000 solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .sidebarexcursionscontent img {
     width: 60px;
     height: 140px;
@@ -277,6 +298,16 @@ padding-top: 5px;
     color: #333;
 }
 
+.sidebar-and-actividades-container p {
+    margin-top: 15px;
+    margin-left: 50px;
+    font-family: Inter,sans-serif;
+    font-size: 17px;
+    line-height: 1.4em;
+    font-weight: 400;
+    color: #333;
+}
+
 .experiencias {
     width: fit-content;
 }
@@ -289,7 +320,7 @@ padding-top: 5px;
     padding: 5px;
 }   
 
-.excursionsbox1 {
+.excursionsboxes {
     outline: black solid 0.5px;
     max-width: 28vw;
     flex-direction: column;
