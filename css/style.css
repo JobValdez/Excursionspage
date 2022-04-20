@@ -15,6 +15,10 @@ li, button {
 .headerimage {
     background-image: url(../img/headerimage.jpg);
     background-repeat:repeat;
+    position: sticky;
+    top: -1px;
+    z-index: 900;
+    
 }
 
 header {
@@ -25,7 +29,8 @@ header {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    max-height: 70px;
+    max-height: 80px;
+    
 }
 
 
@@ -59,6 +64,7 @@ header {
 .nav-container {
     background-color: #0d21d3;
     height: 140px;
+
 }
 
 /* Dropdown Button */
@@ -207,7 +213,6 @@ padding-top: 5px;
     align-content: center;
     margin-left: auto;
     margin-right:auto;
-    outline: black solid;
 }
 
 .excursions-container div .tab1, .tab2 {
@@ -238,18 +243,31 @@ padding-top: 5px;
 /* SIDEBAR AND EXCURSIONS CONTENT */
 
 .sidebarandexcursionscontent {
-    outline: red solid;
     display: flex;
     flex-wrap: wrap;
+    border-bottom: #333 solid 0.5px;
+    padding-bottom: 40px;
+}
+
+.sidebar-and-fiesta-container {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: #333 solid 0.5px;
+    padding-bottom: 40px;
 }
 
 .sidebar-and-actividades-container {
-    outline: red solid;
     display: flex;
     flex-wrap: wrap;
+    border-bottom: #333 solid 0.2px;
+    padding-bottom: 40px;
 }
 
 .sidebarexcursions {
+    flex: 1 1 30%;
+}
+
+.sidebar-fiesta{
     flex: 1 1 30%;
 }
 
@@ -259,7 +277,6 @@ padding-top: 5px;
 
 .excursionscontent {
     flex: 1 1 70%;
-    border: #000 solid;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -267,13 +284,18 @@ padding-top: 5px;
 
 .actividades-container {
     flex: 1 1 70%;
-    border: #000 solid;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
 }
 
-.sidebarexcursionscontent img {
+.sidebarcontent {
+    position: sticky;
+    top: 50px;
+}
+
+.sidebarcontent img {
     width: 60px;
     height: 140px;
     max-height: 50px;
@@ -281,7 +303,7 @@ padding-top: 5px;
     margin: 50px 0px 0 50px;
 }
 
-.sidebarexcursionscontent h3 {
+.sidebarcontent h3 {
     font-size: 38px;
     color:#000;
     margin-left: 50px;
@@ -289,6 +311,16 @@ padding-top: 5px;
 }
 
 .sidebarandexcursionscontent p {
+    margin-top: 15px;
+    margin-left: 50px;
+    font-family: Inter,sans-serif;
+    font-size: 17px;
+    line-height: 1.4em;
+    font-weight: 400;
+    color: #333;
+}
+
+.sidebar-and-fiesta-container p {
     margin-top: 15px;
     margin-left: 50px;
     font-family: Inter,sans-serif;
@@ -320,17 +352,286 @@ padding-top: 5px;
     padding: 5px;
 }   
 
-.excursionsboxes {
-    outline: black solid 0.5px;
-    max-width: 28vw;
-    flex-direction: column;
+.boxescontainer {
+    max-width: 30%;
     margin-top: 60px;
     border-radius: 30px;
+    background-color: #FFF;
 }
 
 .plazasimage {
     background-color: #0d21d3;
     background-image: url(../img/excursionsimage1.jpeg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* CAJAS DE IMAGENES DE FONDO EN EXCURSIONES */
+.excursions-box1-img {
+    background-color: #0d21d3;
+    background-image: url(../img/excursionsimage1.jpeg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.excursions-box2-img {
+    background-color: #0d21d3;
+    background-image: url(../img/excursions/imagen2.jpeg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.excursions-box3-img {
+    background-color: #0d21d3;
+    background-image: url(../img/excursions/imagen3.jpeg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.excursions-box4-img {
+    background-color: #0d21d3;
+    background-image: url(../img/excursions/imagen4.jpg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.excursions-box5-img {
+    background-color: #0d21d3;
+    background-image: url(../img/excursions/imagen5.jpeg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.excursions-box6-img {
+    background-color: #0d21d3;
+    background-image: url(../img/excursions/imagen6.jpg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.excursions-box7-img {
+    background-color: #0d21d3;
+    background-image: url(../img/excursions/imagen7.jpeg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.excursions-box8-img {
+    background-color: #0d21d3;
+    background-image: url(../img/excursions/imagen8.jpg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.excursions-box9-img {
+    background-color: #0d21d3;
+    background-image: url(../img/excursions/imagen9.jpeg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.excursions-box10-img {
+    background-color: #0d21d3;
+    background-image: url(../img/excursions/imagen10.jpeg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.excursions-box11-img {
+    background-color: #0d21d3;
+    background-image: url(../img/excursions/imagen11.jpg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.excursions-box12-img {
+    background-color: #0d21d3;
+    background-image: url(../img/excursions/imagen12.jpg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* CAJAS DE IMAGENES DE FONDO EN ACTIVIDADES */
+.actividades-box1-img {
+    background-color: #0d21d3;
+    background-image: url(../img/activities/imagen1.jpeg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.actividades-box2-img {
+    background-color: #0d21d3;
+    background-image: url(../img/activities/imagen2.jpg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.actividades-box3-img {
+    background-color: #0d21d3;
+    background-image: url(../img/activities/imagen3.jpeg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.actividades-box4-img {
+    background-color: #0d21d3;
+    background-image: url(../img/activities/imagen4.jpeg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.actividades-box5-img {
+    background-color: #0d21d3;
+    background-image: url(../img/activities/imagen5.jpeg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.actividades-box6-img {
+    background-color: #0d21d3;
+    background-image: url(../img/activities/imagen6.jpeg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.actividades-box7-img {
+    background-color: #0d21d3;
+    background-image: url(../img/activities/imagen7.jpg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* CAJAS DE IMAGENES DE FONDO EN ACTIVIDADES */
+.fiesta-box1-img {
+    background-color: #0d21d3;
+    background-image: url(../img/fiestas/imagen1.jpg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fiesta-box2-img {
+    background-color: #0d21d3;
+    background-image: url(../img/fiestas/imagen2.jpeg);
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 70%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fiesta-box3-img {
+    background-color: #0d21d3;
+    background-image: url(../img/fiestas/imagen3.jpeg);
     width: 100%;
     height: 220px;
     background-size: cover;
@@ -377,9 +678,9 @@ padding-top: 5px;
     font-family: Poppins,sans-serif;
     margin-left: 15px;
     color: #00135f;
-    width: auto;
     margin-top: 5px;
     font-size: 1.4vw;
+    width: 100%;
 }
 
 .toursboxlefinfo {
@@ -433,4 +734,241 @@ padding-top: 5px;
 .note {
     color: #8d94a3;
     font-size: 10px;
+}
+
+/* Seccion 3- sobre nosotros y que ofrecemos y experiencias */
+
+.section3image {
+    background-image: url(../img/Section3background.jpg);
+    background-repeat: repeat;
+}
+
+.section3container {
+    max-width: 1600px;
+    align-content: center;
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.about-us {
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.age {
+    margin-bottom: 10px;
+    opacity: 1;
+    color: #00135f;
+    font-size: 1.5vh;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.about-us h3 {
+    color: #00135f;
+    font-family: Poppins,sans-serif;
+    margin-bottom: 14px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    font-size: 10vh;
+    text-align: center;
+}
+
+.opiniones {
+    width: 75vh;
+    margin: 7px auto 25px;
+    font-family: Inter,sans-serif;
+    color: #3768a0;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.what-we-offers {
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.blocks {
+    justify-content: space-evenly;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    max-width: 22%;
+
+@media screen and (max-width: 991px) { .what-we-offers {
+            width:40%;
+            flex-direction:column;
+        }
+    }
+}
+
+.blocks img {
+    width: 24%;
+    margin-bottom: 8px;
+}
+
+.blocks h3 {
+    margin-bottom: 5px;
+    font-family: Inter,sans-serif;
+    color: #1b328b;
+}
+.comment-what-we-offers {
+    margin-top: 7px;
+    color: #2b4d7f;
+    font-family: Inter,sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+}
+
+/* Seccion 4- Contactanos si tienes dudas */
+
+.section4image {
+    background-size: cover;
+    background-image: url(../img/section4background.jpg);
+    background-repeat: repeat;
+    height: 700px;
+    background-size: cover;
+}
+
+.section4content {
+    padding-left: 15%;
+    max-width: 1600px;
+    height: 700px;
+    align-content: center;
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+
+.section4content h3 {
+    margin-top: 0px;
+    font-family: Poppins,sans-serif;
+    color: #fff;
+    font-size: 9.5vh;
+    letter-spacing: -2px;
+}
+
+.description-contact {
+    width: 450px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 0;
+    font-family: Inter,sans-serif;
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    text-align: left;
+    font-size: 2.5vh;
+}
+
+.whatsapp-link {
+    margin-top: 25px;
+    border-radius: 12px;
+    background-color: #fff;
+    font-family: Inter,sans-serif;
+    color: #4a9b27;
+    font-size: 15px;
+    font-weight: 600;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12.5px;
+}
+
+/* Seccion 3- sobre nosotros y que ofrecemos y experiencias */
+.section5image {
+    background-color: #FFF;
+    background-repeat: repeat;
+    display:flex ;
+}
+
+.section5container {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+.conocenos {
+    display: flex;
+    max-width: 80%;
+    margin: auto;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 2%;
+    border: solid #333 0.5px;
+    margin-top:50px ;
+}
+
+.conecenostittle {
+    width: 100%;
+    margin: -2px auto -1px 0;
+    font-family: Poppins,sans-serif;
+    color: #00135f;
+    font-size: 85px;
+    line-height: 1em;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -2px;
+}
+
+.comentario-conocenos {
+    width: 90%;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: #516381;
+    font-size: 19px;
+}
+
+.administracion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.administracion img {
+    width: 170px;
+    height: 170px;
+    max-width: none;
+    border-radius: 200px;
+}
+
+.position {
+    text-align: center;
+    font-family: Inter,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+}
+
+.administracion h3 {
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-top: 20px;
 }
