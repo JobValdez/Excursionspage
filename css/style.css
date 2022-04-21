@@ -85,21 +85,23 @@ header {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #696acf;
+    background-color: #ddd;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 20px;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
+    color: #00135f;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-size: 13px;
 }
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color:#3a4ad6;}
+.dropdown-content a:hover {background-color:#e7f2fc; border-radius: 20px 20px 10px 10px;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
@@ -133,9 +135,11 @@ padding-top: 5px;
 /*  Slice Container*/
 
 .section1 {
-    background-image: url(../img/Playa_Punta_Cana2.jpg);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#0d21d3),color-stop(58%,transparent)),url(../img/Playa_Punta_Cana2.jpg);
     background-repeat: repeat;
-    background-position: 50% 100%;
+    background-position: 20% 100%;
+    min-width: 100%;
+    background-image: -moz-linear-gradient();
 }
 
 .slice-container {
@@ -1120,6 +1124,7 @@ padding-top: 5px;
 
 .copyright {
     color: #fff;
+    font-size: 13px;
 }
 .copyright a{
     font-family: Inter,sans-serif;
