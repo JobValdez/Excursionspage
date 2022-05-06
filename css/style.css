@@ -70,7 +70,8 @@ header {
 .dropbtn {
     background-color: #0d21d3;
     color: white;
-    padding: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
     font-size: 16px;
     border: none;
 }
@@ -182,13 +183,15 @@ padding-top: 5px;
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
+    overflow: hidden;
 }
 
 .slice img {
-    height: 280px;
+    height: 40vh;
     align-items: center;
     border-radius: 20px;
     cursor: pointer;
+    margin: 10px;
 }
 
 /* Fin del slice y comienzo del contenido principal */
@@ -670,7 +673,7 @@ padding-top: 5px;
 
 .toursboxinformation {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 160px;
     align-items: flex-end;
     justify-content: space-between;
@@ -717,6 +720,16 @@ padding-top: 5px;
 .toursboxrightinfo {
     color: rgba(0,0,0,.51);
     margin-right: 15px;
+}
+
+.toursinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+    margin-top: 20px;
 }
 
 .oldvalue {
@@ -809,11 +822,6 @@ padding-top: 5px;
     text-align: center;
     max-width: 22%;
 
-@media screen and (max-width: 991px) { .what-we-offers {
-            width:40%;
-            flex-direction:column;
-        }
-    }
 }
 
 .blocks img {
@@ -846,7 +854,7 @@ padding-top: 5px;
 
 .section4content {
     padding-left: 15%;
-    max-width: 1300px;
+    max-width: max-content;
     height: 700px;
     align-content: center;
     margin-left: auto;
@@ -927,7 +935,7 @@ padding-top: 5px;
     margin: -2px auto -1px 0;
     font-family: Poppins,sans-serif;
     color: #00135f;
-    font-size: 85px;
+    font-size: 6.5vw;
     line-height: 1em;
     font-weight: 700;
     text-align: center;
@@ -952,8 +960,8 @@ padding-top: 5px;
 }
 
 .administracion img {
-    width: 170px;
-    height: 170px;
+    width: 95%;
+    height: 50%;
     max-width: none;
     border-radius: 200px;
 }
@@ -995,9 +1003,29 @@ padding-top: 5px;
     color: #FFF;
     }
 
-    .ubicacion, .contacto, .enlaces {
-    max-width: 30%;
-    min-width: 30%;
+    @media (max-width:600px){
+
+        .ubicacion-contacto-enlaces-box {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ubicacion, .contacto, .enlaces {
+        min-width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-bottom:3%;
+        }
+    }
+
+.ubicacion, .contacto, .enlaces {
+    width: 30%;
+    border-top: #003eaa solid 1px;
+}
+
+.map {
+    overflow: hidden;
 }
 
 .enlaces {
@@ -1030,11 +1058,10 @@ padding-top: 5px;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    
+    flex-wrap: wrap;
 }
 
 .opinion {
-    min-height: 240px;
     max-width: 23%;
     padding: 10px;
     border: 1px solid rgba(181,181,204,.3);
@@ -1053,12 +1080,24 @@ padding-top: 5px;
 
 
 /* FINAL FOOTER INFORMATION CONTAINER */
+
+.ubicacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.ubicacion div {
+    margin-bottom:  15px;
+    font-size: 2vw;
+}
+
 .ubicacion h3, .contacto h3, .enlaces h3 {
     margin-bottom: 15px;
     font-family: Poppins,sans-serif;
     color: #fff;
     font-size: 28px;
     font-weight: 600;
+    padding-top: 15px;
 }
 
 .ubicacion img {
@@ -1168,3 +1207,225 @@ footer {
     margin-right: 10px;
     margin-bottom: 30px;
 }
+
+.nav-toggle {
+        display: none;
+    }
+
+.nav-toggle-label {
+    display: none;
+}
+
+@media (max-width:800px) {
+    .header {
+    position: static;
+    height: 70px;
+    padding-right: 20px;
+    padding-left: 20px;
+    }
+    
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+
+    .header-container {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .nav-toggle-label {
+    display: block;
+    }
+
+    .destinos {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .destinos span {
+        color: #FFFF;
+        font-family: Inter,sans-serif;
+    }
+
+    .logo {
+        width: 20%;
+    }
+    .navs-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 10px;
+        padding-right: 20px;
+    }
+
+    .nav-toggle:checked ~ nav {
+        display: block;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+    
+
+    .catalogo-button {
+        display: none;
+    }
+
+    .slice-container {  
+        flex-direction: column;
+    }
+    .slice-container h1{
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .slice-container h2 {
+        margin-top: 7px;
+        font-size: 16px;
+    }
+
+    .subtitulo {
+        margin-left: 10%;
+        margin-right: 10%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .subtilulo2 h4{
+        font-size: 3.5vw;
+    }
+    .slice {
+        display: flex;
+        overflow: hidden;
+        align-self: flex-end;
+    }
+
+    .slice img {
+        margin: 10px;
+    }
+
+    .catalogo h3{
+        font-size:15vw;
+        margin-right: 60px;
+    }
+
+    .catalogo {
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body {
+        height: auto;
+        background-color: #fff;
+        background-image: none;
+    }
+
+    -----------------------------------------------------------
+
+.excursionscontent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.boxescontainer {
+    max-width: 100%;
+    margin-top: 60px;
+    border-radius: 30px;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 70%;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.toursboxinformation {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 20px;
+    text-align: center; 
+}
+
+.tourstitle {
+    font-size: 4vw;
+    margin-top: 15px;
+}
+
+.toursinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.toursboxlefinfo {
+    font-size: 3vh;
+}
+
+.cancelacion a{
+    font-size: 2vh;
+}
+
+.oldvalue {
+    font-size: 3vh;
+}
+
+.actualvalue {
+    font-size: 4vh;
+}
+
+.note {
+    font-size: 2vh;
+}
+.excursions-box1-img, 
+.excursions-box2-img, 
+.excursions-box3-img, 
+.excursions-box4-img, 
+.excursions-box5-img, 
+.excursions-box6-img,
+.excursions-box7-img,
+.excursions-box8-img, 
+.excursions-box9-img, 
+.excursions-box10-img, 
+.excursions-box11-img,
+.excursions-box12-img {
+    max-width: 35%;
+    border-radius: 30px 0px 0px 30px;
+}
+
+    .what-we-offers {
+        flex-direction: column;
+    }
+    .blocks {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .slice {
+        justify-content: center;
+    }
+
+    .opinion {
+    flex-wrap: wrap;
+    max-width: 95%;
+    margin: 5px;
+    }
+
+    .section4 {
+    outline: #000 solid;
+    overflow: hidden;
+    }
+
+}
+

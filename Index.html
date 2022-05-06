@@ -1,113 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Excursions Page</title>
-</head>
-<body>
-    <div class="header">  
-        <header class="nav-container">
-            <img src="img/Logo-caribe.png" alt="" class="logo">
-            <nav>
-                <ul class="navs-links">
-                    <li><a href="#">Punta Cana</a></li>
-                    <li><a href="#">Bayahibe</a></li>
-                    <li><a href="#">Isla Saona</a></li>
-                </ul>
-            </nav>
-            <div class="dropdown">
-                <button class="dropbtn">Blog <i class="fa-solid fa-arrow-down"></i></button>
-                <div class="dropdown-content">
-                    <a href="#">Blog Saona</a>
-                    <a href="#">Blog General</a>
-                </div>
-            </div>
-            <div class="catalogo-button">
-                <a href="#">Catalogo</a>
-                <img src="img/catalogo-logo.png" alt="">
-            </div>
-        </header>
-    </div>          
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Excursions Page</title>
+    </head>
+    <body>
+        <div class="header">  
+            <header class="nav-container">
+                <img src="img/Logo-caribe.png" alt="" class="logo">
 
-    <div class="section1">
-        <section>
-                <div class="slice-container">
-                    <div class="excursiones"><h1>Excursiones</h1></div>
-                    <div class="enpuntacana"><h1>en Punta Cana</h1></div>
-                    <div class="subtitulo"><h2>No te quedes en el hotel, exprime tu viaje a Punta Cana</h2></div>
-                    <div class="subtilulo2"><h4>Tours Impresindibles</h2></div>
-                    <div class="slice">
-                        <img src="img/elvispresley.jpg" alt="Elvis Presley">
-                        <img src="img/samanaaventures.jpg" alt="Samana Aventuras">
-                        <img src="img/islacatalina.jpg" alt="Isla Catalina">
-                        <img src="img/islasaona.jpg" alt="Isla Saona">
-                        <img src="img/speedboat.jpg" alt="Speed Boat">
-                        <img src="img/santodomingo.jpg" alt="Santo Domingo">
-                        <img src="img/buggies.jpg" alt="Buggies 4x1">
+                <div class="destinos">
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                    <nav>
+                        <ul class="navs-links">
+                            <li><a href="#">Punta Cana</a></li>
+                            <li><a href="#">Bayahibe</a></li>
+                            <li><a href="#">Isla Saona</a></li>
+                        </ul>
+                    </nav>
+                    <label for="nav-toggle" class="nav-toggle-label">
+                        <span>Destinos</span>
+                    </label>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Blog <i class="fa-solid fa-arrow-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Blog Saona</a>
+                        <a href="#">Blog General</a>
                     </div>
                 </div>
-        </section>
-    </div>    
-
-    <div class="section2">
-        <section class="excursions-container">
-
-            <div class="header-container">
-                <div class="catalogo"><h3>Catalogo</h3></div>
-                <div class="places"><a href="#" class="tab1">DESDE PUNTA CANA</a> <a href="#" class="tab2">DESDE BAYAHIBE</a></div>
-            </div>
-
-            <section class="sidebarandexcursionscontent">
-                <div class="sidebarexcursions">
-                    <div class="sidebarcontent">
-                        <img src="img/usercamp.png" alt="User camp logo">
-                        <h3>Excursiones</h3>
-                        <p>Tours todo incluido, con guía, comida y bebidas incluidas, y normalmente de día completo.</p>
-                        <div class="experiencias"><p>12 experiencias</p></div>
-                    </div>
+                <div class="catalogo-button">
+                    <a href="#">Catalogo</a>
+                    <img src="img/catalogo-logo.png" alt="">
                 </div>
-                
-                <div class="excursionscontent">
-                    <div class="boxescontainer">
-                                <div class="excursions-box1-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                    <div class="plazas"><a href="#">28 Plazas Limitadas</a></div>
-                                </div>
+            </header>
+        </div>          
 
-                                <div class="tourstitle">
-                                        <h4>Excursión Isla Saona VIP</h4>
-                                </div>
+        <div class="section1">
+            <section>
+                    <div class="slice-container">
+                        <div class="excursiones"><h1>Excursiones <br>en Punta Cana</h1></div>
+                        <!-- <div class="enpuntacana"><h1>en Punta Cana</h1></div> -->
+                        <div class="subtitulo"><h2>No te quedes en el hotel, exprime tu viaje a Punta Cana</h2></div>
+                        <div class="subtilulo2"><h4>Tours Impresindibles</h2></div>
+                        
+                        <div class="slice">
+                            <img src="img/elvispresley.jpg" alt="Elvis Presley">
+                            <img src="img/samanaaventures.jpg" alt="Samana Aventuras">
+                            <img src="img/islacatalina.jpg" alt="Isla Catalina">
+                            <img src="img/islasaona.jpg" alt="Isla Saona">
+                            <img src="img/speedboat.jpg" alt="Speed Boat">
+                            <img src="img/santodomingo.jpg" alt="Santo Domingo">
+                            <img src="img/buggies.jpg" alt="Buggies 4x1">
+                        </div>
+                    </div>
+            </section>
+        </div>    
 
-                                <div class="toursboxinformation">
+        <div class="section2">
+            <section class="excursions-container">
 
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Lun, mie, vie</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 10 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                <div class="header-container">
+                    <div class="catalogo"><h3>Catalogo</h3></div>
+                    <div class="places"><a href="#" class="tab1">DESDE PUNTA CANA</a> <a href="#" class="tab2">DESDE BAYAHIBE</a></div>
+                </div>
+
+                <section class="sidebarandexcursionscontent">
+                    <div class="sidebarexcursions">
+                        <div class="sidebarcontent">
+                            <img src="img/usercamp.png" alt="User camp logo">
+                            <h3>Excursiones</h3>
+                            <p>Tours todo incluido, con guía, comida y bebidas incluidas, y normalmente de día completo.</p>
+                            <div class="experiencias"><p>12 experiencias</p></div>
+                        </div>
+                    </div>
+                    
+                    <div class="excursionscontent">
+                        <div class="boxescontainer">
+                                    <div class="excursions-box1-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
+                                        <div class="plazas"><a href="#">28 Plazas Limitadas</a></div>
                                     </div>
 
-                                    <div class="toursboxrightinfo">
-                                        <div class="oldvalue"><del> US$110</del></div>
-                                        <div class="actualvalue">US$79</div>
-                                        <div class="note">ADULTOS (DESDE)</div>
+                                    <div class="toursboxinformation">
+                                        <div class="tourstitle">
+                                            <h4>Excursión Isla Saona VIP</h4>
+                                        </div>
+
+                                        <div class="toursinfo">
+                                            <div class="toursboxlefinfo">
+                                                <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Lun, mie, vie</div>
+                                                <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 10 horas</div>
+                                                <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                            </div>
+
+                                            <div class="toursboxrightinfo">
+                                                <div class="oldvalue"><del> US$110</del></div>
+                                                <div class="actualvalue">US$79</div>
+                                                <div class="note">ADULTOS (DESDE)</div>
+                                            </div>
+                                        </div>    
                                     </div>
-                                </div>
-                    </div>
-                    <div class="boxescontainer">
-                                <div class="excursions-box2-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                    <div class="plazas"><a href="#">Plazas Ilimitadas</a></div>
-                                </div>
+                        </div>
+                        <div class="boxescontainer">
+                            <div class="excursions-box2-img"> 
+                                <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
+                                <div class="plazas"><a href="#">Plazas Ilimitadas</a></div>
+                            </div>
 
+                            <div class="toursboxinformation">
                                 <div class="tourstitle">
-                                        <h4>Excursión Samaná con Isla Bacardí y Cascada El Limón</h4>
+                                    <h4>Excursión Samaná con Isla Bacardí y Cascada El Limón</h4>
                                 </div>
-
-                                <div class="toursboxinformation">
-
+                                <div class="toursinfo">
                                     <div class="toursboxlefinfo">
                                         <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> mar, jue y sáb</div>
                                         <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 12 horas</div>
@@ -119,669 +127,671 @@
                                         <div class="actualvalue">US$109</div>
                                         <div class="note">ADULTOS (DESDE)</div>
                                     </div>
-                                </div>
+                                </div>    
+                            </div>    
+                        </div>
+                        <div class="boxescontainer">
+                                    <div class="excursions-box3-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
+                                        <div class="plazas"><a href="#">Plazas Ilimitadas</a></div>
+                                    </div>
+
+                                    <div class="toursboxinformation">
+                                        <div class="tourstitle">
+                                            <h4>Tour Santo Domingo VIP</h4>
+                                        </div>
+                                        <div class="toursinfo">
+                                            <div class="toursboxlefinfo">
+                                                <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Mar, Jue, Vie, Sab</div>
+                                                <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 12 horas</div>
+                                                <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                            </div>
+
+                                            <div class="toursboxrightinfo">
+                                                <div class="oldvalue"><del> US$110</del></div>
+                                                <div class="actualvalue">US$79</div>
+                                                <div class="note">ADULTOS (DESDE)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="boxescontainer">
+                                    <div class="excursions-box4-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
+                                        <div class="plazas"><a href="#">28 Plazas Limitadas</a></div>
+                                    </div>
+
+                                    <div class="toursboxinformation">
+                                        <div class="tourstitle">
+                                            <h4>Excursión Isla Saona en Catamarán</h4>
+                                        </div>
+                                        <div class="toursinfo">
+                                            <div class="toursboxlefinfo">
+                                                <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Todos los días</div>
+                                                <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 10 horas</div>
+                                                <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                            </div>
+
+                                            <div class="toursboxrightinfo">
+                                                <div class="oldvalue"><del> US$65</del></div>
+                                                <div class="actualvalue">US$49</div>
+                                                <div class="note">ADULTOS (DESDE)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="boxescontainer">
+                                    <div class="excursions-box5-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
+                                        <div class="plazas"><a href="#">28 Plazas Ilimitadas</a></div>
+                                    </div>
+
+                                    <div class="toursboxinformation">
+                                        <div class="tourstitle">
+                                            <h4>Excursión Safari Punta Cana</h4>
+                                        </div>
+                                        <div class="toursinfo">
+                                            <div class="toursboxlefinfo">
+                                                <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Lunes a viernes</div>
+                                                <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 8 horas</div>
+                                                <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                            </div>
+
+                                            <div class="toursboxrightinfo">
+                                                <div class="oldvalue"><del> US$85</del></div>
+                                                <div class="actualvalue">US$69</div>
+                                                <div class="note">ADULTOS (DESDE)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="boxescontainer">
+                                    <div class="excursions-box6-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
+                                        <div class="plazas"><a href="#">28 Plazas Ilimitadas</a></div>
+                                    </div>
+
+                                    <div class="toursboxinformation">
+                                        <div class="tourstitle">
+                                            <h4>Excursión Santo Domingo</h4>
+                                        </div>
+                                        <div class="toursinfo">
+                                            <div class="toursboxlefinfo">
+                                                <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Martes a domingos</div>
+                                                <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 12 horas</div>
+                                                <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                            </div>
+
+                                            <div class="toursboxrightinfo">
+                                                <div class="oldvalue"><del> US$85</del></div>
+                                                <div class="actualvalue">US$69</div>
+                                                <div class="note">ADULTOS (DESDE)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="boxescontainer">
+                                    <div class="excursions-box7-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
+                                        <div class="plazas"><a href="#">28 Plazas Ilimitadas</a></div>
+                                    </div>
+
+                                    <div class="toursboxinformation">                                        
+                                        <div class="tourstitle">
+                                            <h4>Tour Ballenas en Samaná, Isla Bacardí y Cascada El Limón</h4>
+                                        </div>
+                                        <div class="toursinfo">
+                                            <div class="toursboxlefinfo">
+                                                <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Enero a marzo</div>
+                                                <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 12 horas</div>
+                                                <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                            </div>
+
+                                            <div class="toursboxrightinfo">
+                                                <div class="oldvalue"><del> US$140</del></div>
+                                                <div class="actualvalue">US$120</div>
+                                                <div class="note">ADULTOS (DESDE)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="boxescontainer">
+                                    <div class="excursions-box8-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
+                                        <div class="plazas"><a href="#">28 Plazas Ilimitadas</a></div>
+                                    </div>
+
+                                    <div class="toursboxinformation">
+                                        <div class="tourstitle">
+                                            <h4>Tour Buceo en Isla Catalina</h4>
+                                        </div>
+                                        <div class="toursinfo">
+                                            <div class="toursboxlefinfo">
+                                                <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Lunes a vierness</div>
+                                                <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 11 horas</div>
+                                                <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                            </div>
+
+                                            <div class="toursboxrightinfo">
+                                                <div class="oldvalue"><del> US$130</del></div>
+                                                <div class="actualvalue">US$120</div>
+                                                <div class="note">ADULTOS (DESDE)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="boxescontainer">
+                                    <div class="excursions-box9-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
+                                        <div class="plazas"><a href="#">28 Plazas Ilimitadas</a></div>
+                                    </div>
+                                
+                                    <div class="toursboxinformation">
+                                        <div class="tourstitle">
+                                            <h4>Tour Isla Saona Deluxe en Helicóptero</h4>
+                                        </div>
+                                        <div class="toursinfo">
+                                            <div class="toursboxlefinfo">
+                                                <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario">Todos los días</div>
+                                                <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 3 horas</div>
+                                                <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                            </div>
+
+                                            <div class="toursboxrightinfo">
+                                                <div class="oldvalue"><del> US$345</del></div>
+                                                <div class="actualvalue">US$325</div>
+                                                <div class="note">ADULTOS (DESDE)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="boxescontainer">
+                                    <div class="excursions-box10-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
+                                        <div class="plazas"><a href="#">Solo para tu grupo</a></div>
+                                    </div>
+
+                                    <div class="toursboxinformation">
+                                        <div class="tourstitle">
+                                            <h4>Tour Isla Saona VIP en privado</h4>
+                                        </div>
+                                        <div class="toursinfo">
+                                            <div class="toursboxlefinfo">
+                                                <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Todos los días</div>
+                                                <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 10 horas</div>
+                                                <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                            </div>
+
+                                            <div class="toursboxrightinfo">
+                                                <div class="actualvalue">US$760</div>
+                                                <div class="note">POR GRUPO (DESDE)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="boxescontainer">
+                                    <div class="excursions-box11-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
+                                        <div class="plazas"><a href="#">Solo para tu grupo</a></div>
+                                    </div>
+
+                                    <div class="toursboxinformation">
+                                        <div class="tourstitle">
+                                            <h4>Tour Privado a Isla Saona en Velero</h4>
+                                        </div>
+                                        <div class="toursinfo">
+                                            <div class="toursboxlefinfo">
+                                                <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Todos los días</div>
+                                                <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 6 horas</div>
+                                                <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                            </div>
+
+                                            <div class="toursboxrightinfo">
+                                                <div class="actualvalue">US$1.150</div>
+                                                <div class="note">PARA GRUPOS (DESDE)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="boxescontainer">
+                                    <div class="excursions-box12-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
+                                    </div>
+
+                                    <div class="toursboxinformation">
+                                        <div class="tourstitle">
+                                            <h4>Excursión Isla Saona VIP</h4>
+                                        </div>
+                                        <div class="toursinfo">
+                                            <div class="toursboxlefinfo">
+                                                <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario">Todos los días</div>
+                                                <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 12 horas</div>
+                                                <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                            </div>
+
+                                            <div class="toursboxrightinfo">
+                                                <div class="oldvalue"><del> US$75</del></div>
+                                                <div class="actualvalue">US$59</div>
+                                                <div class="note">ADULTOS (DESDE)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
                     </div>
-                    <div class="boxescontainer">
-                                <div class="excursions-box3-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                    <div class="plazas"><a href="#">Plazas Ilimitadas</a></div>
-                                </div>
+                </section>
 
-                                <div class="tourstitle">
-                                        <h4>Tour Santo Domingo VIP</h4>
-                                </div>
+                <section class="sidebar-and-actividades-container">
 
-                                <div class="toursboxinformation">
+                        <div class="sidebar-actividades">
+                            <div class="sidebarcontent">
+                                <img src="img/actividadeslogo.png" alt="Actividades logo">
+                                <h3>Actividades</h3>
+                                <p>Experiencias de tiempo parcial. Suelen tener varios turnos durante el día, y tienes de todo tipo para pasarlo en grande, por tierra, mar y aire.</p>
+                                <div class="experiencias"><p>7 experiencias</p></div>
+                            </div>
+                        </div>
 
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Mar, Jue, Vie, Sab</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 12 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                        <div class="actividades-container">
+                            <div class="boxescontainer">
+                                    <div class="actividades-box1-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
                                     </div>
 
-                                    <div class="toursboxrightinfo">
-                                        <div class="oldvalue"><del> US$110</del></div>
-                                        <div class="actualvalue">US$79</div>
-                                        <div class="note">ADULTOS (DESDE)</div>
+                                    <div class="tourstitle">
+                                            <h4>Tour Speed Boat Punta Cana + Snorkel</h4>
                                     </div>
-                                </div>
+
+                                    <div class="toursboxinformation">
+
+                                        <div class="toursboxlefinfo">
+                                            <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Todos los días</div>
+                                            <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 3 horas</div>
+                                            <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                        </div>
+
+                                        <div class="toursboxrightinfo">
+                                            <div class="oldvalue"><del> US$55</del></div>
+                                            <div class="actualvalue">US$40</div>
+                                            <div class="note">POR PERSONA EN <br> LANCHA DOBLE</div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="boxescontainer">
+                                    <div class="actividades-box2-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
+                                    </div>
+
+                                    <div class="tourstitle">
+                                            <h4>Actividad Parasailing Punta Cana</h4>
+                                    </div>
+
+                                    <div class="toursboxinformation">
+
+                                        <div class="toursboxlefinfo">
+                                            <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario">Todos los días</div>
+                                            <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 2 horas</div>
+                                            <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                        </div>
+
+                                        <div class="toursboxrightinfo">
+                                            <div class="oldvalue"><del> US$45</del></div>
+                                            <div class="actualvalue">US$40</div>
+                                            <div class="note">POR PERSONA EN <br> VUELO DOBLE</div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="boxescontainer">
+                                    <div class="actividades-box3-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
+                                    </div>
+
+                                    <div class="tourstitle">
+                                            <h4>Actividad Zipline Adventure Punta Cana</h4>
+                                    </div>
+
+                                    <div class="toursboxinformation">
+
+                                        <div class="toursboxlefinfo">
+                                            <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Lun, mie, vie</div>
+                                            <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 5 horas</div>
+                                            <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                        </div>
+
+                                        <div class="toursboxrightinfo">
+                                            <div class="oldvalue"><del> US$89</del></div>
+                                            <div class="actualvalue">US$79</div>
+                                            <div class="note">ADULTOS (DESDE)</div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="boxescontainer">
+                                    <div class="actividades-box4-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
+                                    </div>
+
+                                    <div class="tourstitle">
+                                            <h4>Buggies Polaris Punta Cana</h4>
+                                    </div>
+
+                                    <div class="toursboxinformation">
+
+                                        <div class="toursboxlefinfo">
+                                            <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario">De lunes a sábados</div>
+                                            <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 4 horas</div>
+                                            <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                        </div>
+
+                                        <div class="toursboxrightinfo">
+                                            <div class="oldvalue"><del> US$65</del></div>
+                                            <div class="actualvalue">US$60</div>
+                                            <div class="note">POR PERSONA EN <br> BUGGY DOBLE</div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="boxescontainer">
+                                    <div class="actividades-box5-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
+                                    </div>
+
+                                    <div class="tourstitle">
+                                            <h4>Seaquarium Punta Cana</h4>
+                                    </div>
+
+                                    <div class="toursboxinformation">
+
+                                        <div class="toursboxlefinfo">
+                                            <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario">De lunes a sábados</div>
+                                            <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 4 horas</div>
+                                            <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                        </div>
+
+                                        <div class="toursboxrightinfo">
+                                            <div class="actualvalue">US$115</div>
+                                            <div class="note">POR PERSONA</div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="boxescontainer">
+                                    <div class="actividades-box6-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
+                                    </div>
+
+                                    <div class="tourstitle">
+                                            <h4>Tour Buggies 4x4 Punta Cana</h4>
+                                    </div>
+
+                                    <div class="toursboxinformation">
+
+                                        <div class="toursboxlefinfo">
+                                            <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> De lunes a sábados</div>
+                                            <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 4 horas</div>
+                                            <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                        </div>
+
+                                        <div class="toursboxrightinfo">
+                                            <div class="oldvalue"><del> US$45</del></div>
+                                            <div class="actualvalue">US$40</div>
+                                            <div class="note">POR PERS. EN <br> BUGGY DOBLE</div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="boxescontainer">
+                                    <div class="actividades-box6-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
+                                    </div>
+
+                                    <div class="tourstitle">
+                                            <h4>Vuelo en helicóptero en Punta Cana</h4>
+                                    </div>
+
+                                    <div class="toursboxinformation">
+
+                                        <div class="toursboxlefinfo">
+                                            <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Todos los días</div>
+                                            <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> Desde 10 minutos</div>
+                                            <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                        </div>
+
+                                        <div class="toursboxrightinfo">
+                                            <div class="actualvalue">US$99</div>
+                                            <div class="note">ADULTOS (DESDE)</div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                </section>
+
+                <section class="sidebar-and-fiesta-container">
+                    <div class="sidebar-fiesta">
+                            <div class="sidebarcontent">
+                                <img src="img/fiestas/copasfiesta.png" alt="Fiesta logo">
+                                <h3>Fiesta</h3>
+                                <p>Entradas a discotecas, shows, y fiestas en barco. Si quieres disfrutar del ocio y fiesta en Punta Cana, estas son las mejores opciones.</p>
+                                <div class="experiencias"><p>3 experiencias</p></div>
+                            </div>
                     </div>
-                    <div class="boxescontainer">
-                                <div class="excursions-box4-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                    <div class="plazas"><a href="#">28 Plazas Limitadas</a></div>
-                                </div>
-
-                                <div class="tourstitle">
-                                        <h4>Excursión Isla Saona en Catamarán</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Todos los días</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 10 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                    
+                    <div class="excursionscontent">
+                        <div class="boxescontainer">
+                                    <div class="fiesta-box1-img"> 
+                                        <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
                                     </div>
 
-                                    <div class="toursboxrightinfo">
-                                        <div class="oldvalue"><del> US$65</del></div>
-                                        <div class="actualvalue">US$49</div>
-                                        <div class="note">ADULTOS (DESDE)</div>
+                                    <div class="tourstitle">
+                                            <h4>Entradas Coco Bongo Punta Cana</h4>
                                     </div>
-                                </div>
+
+                                    <div class="toursboxinformation">
+
+                                        <div class="toursboxlefinfo">
+                                            <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Miércoles a domingos</div>
+                                            <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 5 horas</div>
+                                            <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                        </div>
+
+                                        <div class="toursboxrightinfo">
+                                            <div class="oldvalue"><del> US$75</del></div>
+                                            <div class="actualvalue">US$70</div>
+                                            <div class="note">POR PERSONA</div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="boxescontainer">
+                                    <div class="fiesta-box2-img"> 
+                                    </div>
+
+                                    <div class="tourstitle">
+                                            <h4>Caribbean Party Boat</h4>
+                                    </div>
+
+                                    <div class="toursboxinformation">
+
+                                        <div class="toursboxlefinfo">
+                                            <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario">Todos los días</div>
+                                            <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 4 horas</div>
+                                            <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                        </div>
+
+                                        <div class="toursboxrightinfo">
+                                            <div class="oldvalue"><del> US$65</del></div>
+                                            <div class="actualvalue">US$49</div>
+                                            <div class="note">ADULTOS</div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="boxescontainer">
+                                    <div class="fiesta-box3-img"> 
+                                    </div>
+
+                                    <div class="tourstitle">
+                                            <h4>Discoteca Imagine Cave Punta Cana</h4>
+                                    </div>
+
+                                    <div class="toursboxinformation">
+
+                                        <div class="toursboxlefinfo">
+                                            <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Sábados</div>
+                                            <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 4 horas</div>
+                                            <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
+                                        </div>
+
+                                        <div class="toursboxrightinfo">
+                                            <div class="actualvalue">US$40</div>
+                                            <div class="note">DESDE</div>
+                                        </div>
+                                    </div>
+                        </div>
                     </div>
-                    <div class="boxescontainer">
-                                <div class="excursions-box5-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                    <div class="plazas"><a href="#">28 Plazas Ilimitadas</a></div>
-                                </div>
+                </section>
 
-                                <div class="tourstitle">
-                                        <h4>Excursión Safari Punta Cana</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Lunes a viernes</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 8 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
-                                    </div>
-
-                                    <div class="toursboxrightinfo">
-                                        <div class="oldvalue"><del> US$85</del></div>
-                                        <div class="actualvalue">US$69</div>
-                                        <div class="note">ADULTOS (DESDE)</div>
-                                    </div>
-                                </div>
-                    </div>
-                    <div class="boxescontainer">
-                                <div class="excursions-box6-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                    <div class="plazas"><a href="#">28 Plazas Ilimitadas</a></div>
-                                </div>
-
-                                <div class="tourstitle">
-                                        <h4>Excursión Santo Domingo</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Martes a domingos</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 12 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
-                                    </div>
-
-                                    <div class="toursboxrightinfo">
-                                        <div class="oldvalue"><del> US$85</del></div>
-                                        <div class="actualvalue">US$69</div>
-                                        <div class="note">ADULTOS (DESDE)</div>
-                                    </div>
-                                </div>
-                    </div>
-                    <div class="boxescontainer">
-                                <div class="excursions-box7-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                    <div class="plazas"><a href="#">28 Plazas Ilimitadas</a></div>
-                                </div>
-
-                                <div class="tourstitle">
-                                        <h4>Tour Ballenas en Samaná, Isla Bacardí y Cascada El Limón</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Enero a marzo</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 12 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
-                                    </div>
-
-                                    <div class="toursboxrightinfo">
-                                        <div class="oldvalue"><del> US$140</del></div>
-                                        <div class="actualvalue">US$120</div>
-                                        <div class="note">ADULTOS (DESDE)</div>
-                                    </div>
-                                </div>
-                    </div>
-                    <div class="boxescontainer">
-                                <div class="excursions-box8-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                    <div class="plazas"><a href="#">28 Plazas Ilimitadas</a></div>
-                                </div>
-
-                                <div class="tourstitle">
-                                    <h4>Tour Buceo en Isla Catalina</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Lunes a vierness</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 11 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
-                                    </div>
-
-                                    <div class="toursboxrightinfo">
-                                        <div class="oldvalue"><del> US$130</del></div>
-                                        <div class="actualvalue">US$120</div>
-                                        <div class="note">ADULTOS (DESDE)</div>
-                                    </div>
-                                </div>
-                    </div>
-                    <div class="boxescontainer">
-                                <div class="excursions-box9-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                    <div class="plazas"><a href="#">28 Plazas Ilimitadas</a></div>
-                                </div>
-
-                                <div class="tourstitle">
-                                        <h4>Tour Isla Saona Deluxe en Helicóptero</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario">Todos los días</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 3 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
-                                    </div>
-
-                                    <div class="toursboxrightinfo">
-                                        <div class="oldvalue"><del> US$345</del></div>
-                                        <div class="actualvalue">US$325</div>
-                                        <div class="note">ADULTOS (DESDE)</div>
-                                    </div>
-                                </div>
-                    </div>
-                    <div class="boxescontainer">
-                                <div class="excursions-box10-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                    <div class="plazas"><a href="#">Solo para tu grupo</a></div>
-                                </div>
-
-                                <div class="tourstitle">
-                                    <h4>Tour Isla Saona VIP en privado</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Todos los días</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 10 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
-                                    </div>
-
-                                    <div class="toursboxrightinfo">
-                                        <div class="actualvalue">US$760</div>
-                                        <div class="note">POR GRUPO (DESDE)</div>
-                                    </div>
-                                </div>
-                    </div>
-                    <div class="boxescontainer">
-                                <div class="excursions-box11-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                    <div class="plazas"><a href="#">Solo para tu grupo</a></div>
-                                </div>
-
-                                <div class="tourstitle">
-                                        <h4>Tour Privado a Isla Saona en Velero</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Todos los días</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 6 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
-                                    </div>
-
-                                    <div class="toursboxrightinfo">
-                                        <div class="actualvalue">US$1.150</div>
-                                        <div class="note">PARA GRUPOS (DESDE)</div>
-                                    </div>
-                                </div>
-                    </div>
-                    <div class="boxescontainer">
-                                <div class="excursions-box12-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                </div>
-
-                                <div class="tourstitle">
-                                        <h4>Excursión Isla Saona VIP</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario">Todos los días</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 12 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
-                                    </div>
-
-                                    <div class="toursboxrightinfo">
-                                        <div class="oldvalue"><del> US$75</del></div>
-                                        <div class="actualvalue">US$59</div>
-                                        <div class="note">ADULTOS (DESDE)</div>
-                                    </div>
-                                </div>
-                    </div>
-                </div>
             </section>
-
-            <section class="sidebar-and-actividades-container">
-
-                    <div class="sidebar-actividades">
-                        <div class="sidebarcontent">
-                            <img src="img/actividadeslogo.png" alt="Actividades logo">
-                            <h3>Actividades</h3>
-                            <p>Experiencias de tiempo parcial. Suelen tener varios turnos durante el día, y tienes de todo tipo para pasarlo en grande, por tierra, mar y aire.</p>
-                            <div class="experiencias"><p>7 experiencias</p></div>
-                        </div>
-                    </div>
-
-                    <div class="actividades-container">
-                        <div class="boxescontainer">
-                                <div class="actividades-box1-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                </div>
-
-                                <div class="tourstitle">
-                                        <h4>Tour Speed Boat Punta Cana + Snorkel</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Todos los días</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 3 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
-                                    </div>
-
-                                    <div class="toursboxrightinfo">
-                                        <div class="oldvalue"><del> US$55</del></div>
-                                        <div class="actualvalue">US$40</div>
-                                        <div class="note">POR PERSONA EN <br> LANCHA DOBLE</div>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="boxescontainer">
-                                <div class="actividades-box2-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                </div>
-
-                                <div class="tourstitle">
-                                        <h4>Actividad Parasailing Punta Cana</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario">Todos los días</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 2 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
-                                    </div>
-
-                                    <div class="toursboxrightinfo">
-                                        <div class="oldvalue"><del> US$45</del></div>
-                                        <div class="actualvalue">US$40</div>
-                                        <div class="note">POR PERSONA EN <br> VUELO DOBLE</div>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="boxescontainer">
-                                <div class="actividades-box3-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                </div>
-
-                                <div class="tourstitle">
-                                        <h4>Actividad Zipline Adventure Punta Cana</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Lun, mie, vie</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 5 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
-                                    </div>
-
-                                    <div class="toursboxrightinfo">
-                                        <div class="oldvalue"><del> US$89</del></div>
-                                        <div class="actualvalue">US$79</div>
-                                        <div class="note">ADULTOS (DESDE)</div>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="boxescontainer">
-                                <div class="actividades-box4-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                </div>
-
-                                <div class="tourstitle">
-                                        <h4>Buggies Polaris Punta Cana</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario">De lunes a sábados</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 4 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
-                                    </div>
-
-                                    <div class="toursboxrightinfo">
-                                        <div class="oldvalue"><del> US$65</del></div>
-                                        <div class="actualvalue">US$60</div>
-                                        <div class="note">POR PERSONA EN <br> BUGGY DOBLE</div>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="boxescontainer">
-                                <div class="actividades-box5-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                </div>
-
-                                <div class="tourstitle">
-                                        <h4>Seaquarium Punta Cana</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario">De lunes a sábados</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 4 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
-                                    </div>
-
-                                    <div class="toursboxrightinfo">
-                                        <div class="actualvalue">US$115</div>
-                                        <div class="note">POR PERSONA</div>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="boxescontainer">
-                                <div class="actividades-box6-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                </div>
-
-                                <div class="tourstitle">
-                                        <h4>Tour Buggies 4x4 Punta Cana</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> De lunes a sábados</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 4 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
-                                    </div>
-
-                                    <div class="toursboxrightinfo">
-                                        <div class="oldvalue"><del> US$45</del></div>
-                                        <div class="actualvalue">US$40</div>
-                                        <div class="note">POR PERS. EN <br> BUGGY DOBLE</div>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="boxescontainer">
-                                <div class="actividades-box6-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                </div>
-
-                                <div class="tourstitle">
-                                        <h4>Vuelo en helicóptero en Punta Cana</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Todos los días</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> Desde 10 minutos</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
-                                    </div>
-
-                                    <div class="toursboxrightinfo">
-                                        <div class="actualvalue">US$99</div>
-                                        <div class="note">ADULTOS (DESDE)</div>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-            </section>
-
-            <section class="sidebar-and-fiesta-container">
-                <div class="sidebar-fiesta">
-                        <div class="sidebarcontent">
-                            <img src="img/fiestas/copasfiesta.png" alt="Fiesta logo">
-                            <h3>Fiesta</h3>
-                            <p>Entradas a discotecas, shows, y fiestas en barco. Si quieres disfrutar del ocio y fiesta en Punta Cana, estas son las mejores opciones.</p>
-                            <div class="experiencias"><p>3 experiencias</p></div>
-                        </div>
-                </div>
-                
-                <div class="excursionscontent">
-                    <div class="boxescontainer">
-                                <div class="fiesta-box1-img"> 
-                                    <img src="img/favoritos.png" alt="Favoritos" class="favoritos">
-                                </div>
-
-                                <div class="tourstitle">
-                                        <h4>Entradas Coco Bongo Punta Cana</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Miércoles a domingos</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 5 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
-                                    </div>
-
-                                    <div class="toursboxrightinfo">
-                                        <div class="oldvalue"><del> US$75</del></div>
-                                        <div class="actualvalue">US$70</div>
-                                        <div class="note">POR PERSONA</div>
-                                    </div>
-                                </div>
-                    </div>
-                    <div class="boxescontainer">
-                                <div class="fiesta-box2-img"> 
-                                </div>
-
-                                <div class="tourstitle">
-                                        <h4>Caribbean Party Boat</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario">Todos los días</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 4 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
-                                    </div>
-
-                                    <div class="toursboxrightinfo">
-                                        <div class="oldvalue"><del> US$65</del></div>
-                                        <div class="actualvalue">US$49</div>
-                                        <div class="note">ADULTOS</div>
-                                    </div>
-                                </div>
-                    </div>
-                    <div class="boxescontainer">
-                                <div class="fiesta-box3-img"> 
-                                </div>
-
-                                <div class="tourstitle">
-                                        <h4>Discoteca Imagine Cave Punta Cana</h4>
-                                </div>
-
-                                <div class="toursboxinformation">
-
-                                    <div class="toursboxlefinfo">
-                                        <div class="schedulle"> <img src="img/calendaricon.svg" alt="calendario" class="calendario"> Sábados</div>
-                                        <div class="hours"><img src="img/reloj.svg" alt="boxreloj" class="reloj"> 4 horas</div>
-                                        <div class="cancelacion"><a href="#">CANCELACIÓN GRATUITA*</a></div>
-                                    </div>
-
-                                    <div class="toursboxrightinfo">
-                                        <div class="actualvalue">US$40</div>
-                                        <div class="note">DESDE</div>
-                                    </div>
-                                </div>
-                    </div>
-                </div>
-            </section>
-
-        </section>
-    </div>
-
-    <div class="section3">
-        <div class="section3container">
-
-            <div class="about-us">
-                <div class="age">DESDE 2014 OFRECIENDO EXPERIENCIAS</div>
-                <h3>Tu agencia <br> de confianza</h3>
-                <div class="opiniones">Gracias al trato cercano y la calidad de nuestros tours, hemos recibido cientos de opiniones 5/5 ⭐️ en facebook en los últimos años</div>
-            </div>
-
-            <div class="what-we-offers">
-                <div class="blocks">
-                    <img src="img/Section3/estrella.svg" alt="Icono de favoritos">
-                    <h3>La agencia local mejor valorada</h3>
-                    <div class="comment-what-we-offers">Trato cercano y calidad en nuestros tours. Tenemos 5/5 ⭐️ en Facebook Reviews.</div>
-                </div>
-
-                <div class="blocks">
-                    <img src="img/Section3/aprovado.svg" alt="Icono de aprovado">
-                    <h3>Cancela o modifica gratis</h3>
-                    <div class="comment-what-we-offers">Modifica o cancela tu reserva  hasta 48 horas antes, sin costes ni explicaciones.</div>
-                </div>
-
-                <div class="blocks">
-                    <img src="img/Section3/bandera.png" alt="Bandera Dominicana">
-                    <h3>Agencia local sin intermediaros</h3>
-                    <div class="comment-what-we-offers">Somos una agencia en Punta Cana, con tours propios, y experiencias seleccionadas</div>
-                </div>
-
-                <div class="blocks">
-                    <img src="img/Section3/bus.svg" alt="Bus">
-                    <h3>Ofrecemos recogida en hoteles</h3>
-                    <div class="comment-what-we-offers">Todos nuestros tours tienen la opción de recogida y vuelta en hoteles.</div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="section4">
-            <div class="section4content">
-                <h3>¿Tienes dudas <br> sobre cómo <br> reservar?</h3>
-                <div class="description-contact">Estamos a tu disposición vía WebChat o por WhatsApp. Cuenta con nosotros para asesorarte y ayudarte a elegir tus excursiones en Punta Cana.</div>    
-                <a href="#" class="whatsapp-link">Contáctanos por WhatsApp</a>
-            </div>
-    </div>
-
-    <div class="section5">
-            <div class="section5container">
-                <div class="conocenos">
-                    <h3 class="conecenostittle">Conócenos</h3>
-                    <div class="comentario-conocenos">Somos una agencia de excursiones con gerencia española, establecida en Punta Cana, y gracias a esto podemos ofrecerte un servicio cercano, y precios imbatibles en tours de calidad.</div>
-
-                    <div class="administracion"> 
-                        <div>
-                            <img src="img/Conocenos/omar.jpg" alt="Omar Director">
-                            <h3>Omar</h3>
-                            <div class="position">Fundador / Director</div>
-                        </div>
-                        <div>
-                            <img src="img/Conocenos/lola.jpeg" alt="Eva Reservarion Manager">
-                            <h3>Lola</h3>
-                            <div class="position">Reservation manager</div>
-                        </div>
-                        <div>
-                            <img src="img/Conocenos/eva.jpg" alt="Lola Sales Manager">
-                            <h3>Eva</h3>
-                            <div class="position">Sales manager / Att. Cliente</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-    </div>
-
-    <div class="finalsection">
-        <div class="ubicacion-contacto-enlaces-box">
-
-            <div class="ubicacion">
-                <h3>Ubicación</h3>
-                <div><img src="img/footer/location-icon.svg" alt="Location icon"> Avda. Barceló S/N, Punta Cana, Rep. Dominicana</div>
-                <div><img src="img/footer/whatsapp_icon.png" alt=""><a href="Whatsapp Icon">+1 829 221 4069</a></div>
-                <div><img src="img/footer/mail_icon.png" alt="Mail icon"> info@caribeactivo.com</div>
-                <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241981.2674429108!2d-68.5455619065662!3d18.620990080439633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea891645dcbfe77%3A0x61881cfaed12f6f3!2sPunta%20Cana!5e0!3m2!1ses!2sdo!4v1650551094861!5m2!1ses!2sdo" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            </div>
-
-            <div class="contacto">
-                <h3>Contacto</h3>
-                <div><label>Nombre y apellido</label></div>
-                <input type="text" name="" id="" class="input">
-                <div><label>Email</label></div>
-                <input type="text" name="" id="" class="input">
-                <div><label>Mensaje</label></div>
-                <textarea name="" id="textarea" cols="19" rows="3" class="input"></textarea>  <br>
-                <input type="button" value="Enviar" class="sendbutton">
-            </div>
-
-            <div class="enlaces">
-                <h3>Enlaces útiles</h3>
-                <a href="#">Quienes Somos</a>
-                <a href="#">Cancelaciones / reclamaciones</a>
-                <a href="#">Seguro de cancelación</a>
-                <a href="#">Blog Caribe Activo</a>
-                <a href="#">Blog Isla Saona</a>
-                <a href="#">Contacto</a>
-                <a href="#">Privacidad, uso y cookies</a>
-                <a href="#">Opiniones de Caribe Activo</a>
-            </div>
-
         </div>
 
-        <div class="opinionesclientes">
-            <h3>¿Qué opinan nuestros clientes?</h3>
-            <div class="opiniones">
-                <div class="opinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure magni aperiam distinctio fugiat quos rem nulla ullam dicta facere!</div>
-                <div class="opinion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore dolore ex similique, doloribus quo tenetur temporibus dignissimos suscipit fuga cumque.</div>
-                <div class="opinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nisi explicabo corrupti sapiente facilis vel ipsum ducimus quibusdam numquam reiciendis.</div>
-                <div class="opinion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, magni fugiat deserunt cum non pariatur commodi voluptatibus sequi asperiores incidunt.</div>
+        <div class="section3">
+            <div class="section3container">
+
+                <div class="about-us">
+                    <div class="age">DESDE 2014 OFRECIENDO EXPERIENCIAS</div>
+                    <h3>Tu agencia <br> de confianza</h3>
+                    <div class="opiniones">Gracias al trato cercano y la calidad de nuestros tours, hemos recibido cientos de opiniones 5/5 ⭐️ en facebook en los últimos años</div>
+                </div>
+
+                <div class="what-we-offers">
+                    <div class="blocks">    
+                        <img src="img/Section3/estrella.svg" alt="Icono de favoritos">
+                        <h3>La agencia local mejor valorada</h3>
+                        <div class="comment-what-we-offers">Trato cercano y calidad en nuestros tours. Tenemos 5/5 ⭐️ en Facebook Reviews.</div>
+                    </div>
+
+                    <div class="blocks">
+                        <img src="img/Section3/aprovado.svg" alt="Icono de aprovado">
+                        <h3>Cancela o modifica gratis</h3>
+                        <div class="comment-what-we-offers">Modifica o cancela tu reserva  hasta 48 horas antes, sin costes ni explicaciones.</div>
+                    </div>
+
+                    <div class="blocks">
+                        <img src="img/Section3/bandera.png" alt="Bandera Dominicana">
+                        <h3>Agencia local sin intermediaros</h3>
+                        <div class="comment-what-we-offers">Somos una agencia en Punta Cana, con tours propios, y experiencias seleccionadas</div>
+                    </div>
+
+                    <div class="blocks">
+                        <img src="img/Section3/bus.svg" alt="Bus">
+                        <h3>Ofrecemos recogida en hoteles</h3>
+                        <div class="comment-what-we-offers">Todos nuestros tours tienen la opción de recogida y vuelta en hoteles.</div>
+                    </div>
+
+                </div>
             </div>
         </div>
 
-        <div class="copyright-and-stars-container">
-            <div class="copyright"><a href="#">Caribe Activo Tours LLC.</a>Todos los derechos reservados.</div>
-            <div class="stars">
-                <img src="img/footer/tripadvisor.png" alt="Tripadvisor 5 stars review">
-                <img src="img/footer/google.ong.png" alt="Google 5 stars review">
-                <img src="img/footer/facebook.png" alt="Facebook 5 stars review">
-            </div>
+        <div class="section4">
+                <div class="section4content">
+                    <h3>¿Tienes dudas <br> sobre cómo <br> reservar?</h3>
+                    <div class="description-contact">Estamos a tu disposición vía WebChat o por WhatsApp. Cuenta con nosotros para asesorarte y ayudarte a elegir tus excursiones en Punta Cana.</div>    
+                    <a href="#" class="whatsapp-link">Contáctanos por WhatsApp</a>
+                </div>
         </div>
 
-        <footer>
-            <div class="logocaribeactivo">
-                <img src="img/footer/caribeactivologo.png" alt="Caribe Activo Logo">
+        <div class="section5">
+                <div class="section5container">
+                    <div class="conocenos">
+                        <h3 class="conecenostittle">Conócenos</h3>
+                        <div class="comentario-conocenos">Somos una agencia de excursiones con gerencia española, establecida en Punta Cana, y gracias a esto podemos ofrecerte un servicio cercano, y precios imbatibles en tours de calidad.</div>
+
+                        <div class="administracion"> 
+                            <div>
+                                <img src="img/Conocenos/omar.jpg" alt="Omar Director">
+                                <h3>Omar</h3>
+                                <div class="position">Fundador / Director</div>
+                            </div>
+                            <div>
+                                <img src="img/Conocenos/lola.jpeg" alt="Eva Reservarion Manager">
+                                <h3>Lola</h3>
+                                <div class="position">Reservation manager</div>
+                            </div>
+                            <div>
+                                <img src="img/Conocenos/eva.jpg" alt="Lola Sales Manager">
+                                <h3>Eva</h3>
+                                <div class="position">Sales manager / Att. Cliente</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+
+        <div class="finalsection">
+            <div class="ubicacion-contacto-enlaces-box">
+
+                <div class="ubicacion">
+                    <h3>Ubicación</h3>
+                    <div><img src="img/footer/location-icon.svg" alt="Location icon"> Avda. Barceló S/N, Punta Cana, Rep. Dominicana</div>
+                    <div><img src="img/footer/whatsapp_icon.png" alt=""><a href="Whatsapp Icon">+1 829 221 4069</a></div>
+                    <div><img src="img/footer/mail_icon.png" alt="Mail icon"> info@caribeactivo.com</div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241981.2674429108!2d-68.5455619065662!3d18.620990080439633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea891645dcbfe77%3A0x61881cfaed12f6f3!2sPunta%20Cana!5e0!3m2!1ses!2sdo!4v1650551094861!5m2!1ses!2sdo" max-width="400" max-height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="contacto">
+                    <h3>Contacto</h3>
+                    <div><label>Nombre y apellido</label></div>
+                    <input type="text" name="" id="" class="input">
+                    <div><label>Email</label></div>
+                    <input type="text" name="" id="" class="input">
+                    <div><label>Mensaje</label></div>
+                    <textarea name="" id="textarea" cols="19" rows="3" class="input"></textarea>  <br>
+                    <input type="button" value="Enviar" class="sendbutton">
+                </div>
+
+                <div class="enlaces">
+                    <h3>Enlaces útiles</h3>
+                    <a href="#">Quienes Somos</a>
+                    <a href="#">Cancelaciones / reclamaciones</a>
+                    <a href="#">Seguro de cancelación</a>
+                    <a href="#">Blog Caribe Activo</a>
+                    <a href="#">Blog Isla Saona</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Privacidad, uso y cookies</a>
+                    <a href="#">Opiniones de Caribe Activo</a>
+                </div>
+
             </div>
 
-            <div class="socialnetworks">
-                <a href="#" target="_blank"><img src="img/footer/tiktoklogo.svg" alt="Tik Tok Logo"></a>
-                <a href="#" target="_blank"><img src="img/footer/instagramlogo.svg" alt="Instagram Logo"></a>
-                <a href="#" target="_blank"><img src="img/footer/youtubelogo.svg" alt="Youtube Logo"></a>
-                <a href="#" target="_blank"><img src="img/footer/facebooklogo.svg" alt="Facebook Logo"></a>
+            <div class="opinionesclientes">
+                <h3>¿Qué opinan nuestros clientes?</h3>
+                <div class="opiniones">
+                    <div class="opinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure magni aperiam distinctio fugiat quos rem nulla ullam dicta facere!</div>
+                    <div class="opinion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore dolore ex similique, doloribus quo tenetur temporibus dignissimos suscipit fuga cumque.</div>
+                    <div class="opinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nisi explicabo corrupti sapiente facilis vel ipsum ducimus quibusdam numquam reiciendis.</div>
+                    <div class="opinion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, magni fugiat deserunt cum non pariatur commodi voluptatibus sequi asperiores incidunt.</div>
+                </div>
             </div>
-        </footer>
-    </div>
-    
-</body>
+
+            <div class="copyright-and-stars-container">
+                <div class="copyright"><a href="#">Caribe Activo Tours LLC.</a>Todos los derechos reservados.</div>
+                <div class="stars">
+                    <img src="img/footer/tripadvisor.png" alt="Tripadvisor 5 stars review">
+                    <img src="img/footer/google.ong.png" alt="Google 5 stars review">
+                    <img src="img/footer/facebook.png" alt="Facebook 5 stars review">
+                </div>
+            </div>
+
+            <footer>
+                <div class="logocaribeactivo">
+                    <img src="img/footer/caribeactivologo.png" alt="Caribe Activo Logo">
+                </div>
+
+                <div class="socialnetworks">
+                    <a href="#" target="_blank"><img src="img/footer/tiktoklogo.svg" alt="Tik Tok Logo"></a>
+                    <a href="#" target="_blank"><img src="img/footer/instagramlogo.svg" alt="Instagram Logo"></a>
+                    <a href="#" target="_blank"><img src="img/footer/youtubelogo.svg" alt="Youtube Logo"></a>
+                    <a href="#" target="_blank"><img src="img/footer/facebooklogo.svg" alt="Facebook Logo"></a>
+                </div>
+            </footer>
+        </div>
+        
+    </body>
 </html>
