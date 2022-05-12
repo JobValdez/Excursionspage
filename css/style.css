@@ -539,88 +539,95 @@ padding-top: 5px;
 
 /* CAJAS DE IMAGENES DE FONDO EN ACTIVIDADES */
 .actividades-box1-img {
-    background-color: #0d21d3;
-    background-image: url(../img/activities/imagen1.jpeg);
+    background-color: #FFFFFF;
+    background-image: url(../img/hondas/Honda-civic-2019.png);
     width: 100%;
     height: 220px;
-    background-size: cover;
-    background-position: 100% 70%;
+    background-size: contain;
+    background-position: 60% 20%;
     border-radius: 30px 30px 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-repeat: no-repeat;
 }
 .actividades-box2-img {
-    background-color: #0d21d3;
-    background-image: url(../img/activities/imagen2.jpg);
+    background-color: #FFFFFF;
+    background-image: url(../img/hondas/honda-crv-2016.png);
     width: 100%;
     height: 220px;
-    background-size: cover;
-    background-position: 100% 70%;
+    background-size: contain;
+    background-position: 60% 20%;
     border-radius: 30px 30px 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-repeat: no-repeat;
 }
 .actividades-box3-img {
-    background-color: #0d21d3;
-    background-image: url(../img/activities/imagen3.jpeg);
+    background-color: #FFFFFF;
+    background-image: url(../img/hondas/honda-crv-2017-red.png);
     width: 100%;
     height: 220px;
-    background-size: cover;
-    background-position: 100% 70%;
+    background-size: contain;
+    background-position: 60% 20%;
     border-radius: 30px 30px 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-repeat: no-repeat;
 }
 .actividades-box4-img {
-    background-color: #0d21d3;
-    background-image: url(../img/activities/imagen4.jpeg);
+    background-color: #FFFFFF;
+    background-image: url(../img/hondas/honda-fit-2015.jpg);
     width: 100%;
     height: 220px;
-    background-size: cover;
-    background-position: 100% 70%;
+    background-size: contain;
+    background-position: 60% 20%;
     border-radius: 30px 30px 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-repeat: no-repeat;
 }
 .actividades-box5-img {
-    background-color: #0d21d3;
-    background-image: url(../img/activities/imagen5.jpeg);
+    background-color: #FFFFFF;
+    background-image: url(../img/hondas/Honda-hrv-2020.jpg);
     width: 100%;
     height: 220px;
-    background-size: cover;
-    background-position: 100% 70%;
+    background-size: contain;
+    background-position: 60% 20%;
     border-radius: 30px 30px 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-repeat: no-repeat;
 }
 .actividades-box6-img {
-    background-color: #0d21d3;
-    background-image: url(../img/activities/imagen6.jpeg);
+    background-color: #FFFFFF;
+    background-image: url(../img/hondas/honda-crv-2019.png);
     width: 100%;
     height: 220px;
-    background-size: cover;
-    background-position: 100% 70%;
+    background-size: contain;
+    background-position: 60% 20%;
     border-radius: 30px 30px 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-repeat: no-repeat;
 }
 .actividades-box7-img {
-    background-color: #0d21d3;
-    background-image: url(../img/activities/imagen7.jpg);
+    background-color: #FFFFFF;
+    background-image: url(../img/hondas/Honda-fit-2022.jpg);
     width: 100%;
     height: 220px;
-    background-size: cover;
-    background-position: 100% 70%;
+    background-size: contain;
+    background-position: 60% 20%;
     border-radius: 30px 30px 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-repeat: no-repeat;
 }
 
 /* CAJAS DE IMAGENES DE FONDO EN ACTIVIDADES */
@@ -674,7 +681,6 @@ padding-top: 5px;
 .plazas {
     margin-bottom: 3px;
     align-self: flex-start;
-    background-color: #333;
     align-self: center;
 }
 
@@ -698,8 +704,9 @@ padding-top: 5px;
     margin-left: 15px;
     color: #00135f;
     margin-top: 5px;
-    font-size: 1.4vw;
+    font-size: 1.5vw;
     width: 100%;
+    text-align: center;
 }
 
 .toursboxlefinfo {
@@ -719,7 +726,7 @@ padding-top: 5px;
 .cancelacion a{
     font-family: Inter,sans-serif;
     color: #59a561;
-    font-size: 10px;
+    font-size: 1vw;
     line-height: 1.3em;
     font-weight: 700;
     text-align: left;
@@ -748,7 +755,7 @@ padding-top: 5px;
 .oldvalue {
     color: #e00000;
     font-weight: bolder;
-    font-size: 14px;
+    font-size: 1vw;
     font-weight: 600;
     letter-spacing: 0;
     text-decoration: line-through;
@@ -757,7 +764,7 @@ padding-top: 5px;
 .actualvalue {
     font-family: Inter,sans-serif;
     color: #0d21d3;
-    font-size: 22px;
+    font-size: 1.2vw;
     font-weight: bolder;
 }
 .note {
@@ -1387,7 +1394,7 @@ footer {
 }
 
 .cancelacion a{
-    font-size: 2vh;
+    font-size: 1vh;
 }
 
 .oldvalue {
@@ -1436,7 +1443,6 @@ footer {
     }
 
     .section4 {
-    outline: #000 solid;
     overflow: hidden;
     }
 
